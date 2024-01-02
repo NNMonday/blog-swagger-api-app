@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left {
+    color: #5CB85C;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+}
+
+.nav-right .active,
+.nav-right a:hover {
+    color: black;
+}
+
+.submit,
+.favorite {
+    background-color: #5CB85C;
+    border-color: #5CB85C;
+}
+
+.submit:hover,
+.submit:active,
+.submit:disabled,
+.not-favorite:hover,
+.not-favorite:active,
+.not-favorite:disabled,
+.favorite:hover,
+.favorite:active,
+.favorite:disabled,
+.add-comment:hover,
+.add-comment:active,
+.add-comment:disabled,
+.publish:hover,
+.publish:active,
+.publish:disabled {
+    background-color: #449D44 !important;
+    border-color: #449D44 !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(#485563, #29323c);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+}
+
+.footer:hover {
+    text-decoration: underline;
+}
+
+.settings input {
+    margin-bottom: 20px;
+}
+
+.logout {
+    background-color: transparent;
+    color: #B85C5C;
+}
+
+.edit {
+    color: #999;
+    border: 1px solid #999;
+    background-color: transparent;
+}
+
+.edit:hover,
+.edit:active,
+.edit:disabled {
+    background-color: #ccc !important;
+    border: 1px solid #999 !important;
+}
+
+.feed-status div {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #aaa;
+    padding: 10px
+}
+
+.feed-status div:hover:not(.active),
+.feed-status div:active {
+    background-color: transparent !important;
+    color: black;
+}
+
+.feed-status .active {
+    background-color: transparent;
+    color: #5CB85C;
+    border-bottom: solid 2px #5CB85C;
+}
+
+.author {
+    color: #5CB85C;
+    text-decoration: none;
+}
+
+.date {
+    color: #bbb;
+    font-size: 0.8rem;
+}
+
+.author:hover {
+    text-decoration: underline;
+}
+
+.summary,
+.others {
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.tag {
+    cursor: pointer;
+    padding: 2px 7px;
+    margin: 2px;
+    border: solid thin #999;
+    border-radius: 10rem;
+}
+
+.not-favorite {
+    background-color: transparent;
+    border-color: #5CB85C;
+    color: #5CB85C;
+}
+
+.popular-tag {
+    background-color: #818a91;
+    color: #fff;
+    border: none;
+    margin: 4px;
+    border-radius: 10rem;
+}
+
+.popular-tag:hover,
+.popular-tag:focus,
+.popular-tag:active {
+    background-color: #687077 !important;
+    text-decoration: none;
+}
+
+.title,
+.description,
+.read-more {
+    cursor: pointer;
+}
+
+.profile-nav {
+    padding: 10px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    margin: 5px;
+    color: #aaa;
+}
+
+.profile-nav:has(.active) {
+    border-bottom: solid thin #5CB85C;
+}
+
+.profile-nav a:hover {
+    color: black;
+}
+
+.profile-nav .active {
+    color: #5CB85C !important;
+}
+
+.follow {
+    background-color: #ffffff;
+}
+
+.comment-input {
+    border-radius: 6px 6px 0 0;
+}
+
+.comment-input::placeholder {
+    color: #9999b3;
+}
+
+.comment-input:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+.add-comment,
+.publish {
+    color: #fff;
+    background-color: #5CB85C;
+    border-color: #5CB85C;
+    font-weight: 700;
+    float: right;
+}
+
+.summary:hover,
+.title:hover {
+    text-decoration: underline;
+}
+
+.edit-btn,
+.delete-article {
+    background-color: transparent;
+}
+
+.edit-btn {
+    color: #ccc;
+    border-color: currentColor;
+}
+
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active {
+    color: #fff !important;
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+}
+
+.delete-article {
+    color: #B85C5C;
+    border-color: currentColor;
+}
+
+.delete-article:hover,
+.delete-article:focus,
+.delete-article:disabled,
+.delete-article:active {
+    color: #fff !important;
+    background-color: #B85C5C !important;
+    border-color: #B85C5C !important;
+}
+
+.tag-item {
+    background-color: #818a91;
+    color: #fff !important;
+    font-size: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    white-space: nowrap;
+    margin-right: 3px;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.tag-item i {
+    cursor: pointer;
+}
+
+.to-add-comment {
+    color: #5CB85C;
+    text-decoration: none
+}
+
+.to-add-comment:hover {
+    text-decoration: underline;
+}
